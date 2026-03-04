@@ -1,19 +1,70 @@
-# shared
+# macOS Security Banner
 
+![Platform](https://img.shields.io/badge/platform-macOS-lightgrey)
+![Shell](https://img.shields.io/badge/shell-bash-blue)
+![Purpose](https://img.shields.io/badge/purpose-security--banner-orange)
+
+This repository installs a macOS login policy banner along with supporting system files used in a managed environment.
+
+The scripts included here install:
+
+- a login Policy Banner
+- a hosts file
+- a Message of the Day (motd)
+
+These files are copied into their standard macOS locations and basic system caches are refreshed after installation.
+
+---
 ## Installation
 
-> **Warning:** If you want to install the files included in this repository, make sure that you understand the commands that are being executed in each of the scripts that you decide to run.  Don’t blindly execute any scripts..  **Use at your own risk!**
+> Warning:
+> 
+> If you plan to run the scripts in this repository, make sure you understand the commands being executed.
+>   
+> Do not blindly run scripts from the internet. Review them first and run them at your own risk.
 
-### Blah blah blah..
+You can clone the repository anywhere you like.
 
-You can clone the repository however or wherever you want. (I like to keep it in `~/.dotfiles`.)
+A common location is:
 
-To install:
+```
+~/.dotfiles
+```
+
+To install using the bootstrap script:
 
 ```bash
 curl -LJO https://raw.githubusercontent.com/marscanbueno/shared/main/.install.sh && source .install.sh
 ```
 
+*I updated the repo name as well as the README, you will have the codeblock above.*
+
+---
+
+## Files Installed
+
+The scripts install the following files:
+
+```
+/Library/Security/PolicyBanner.rtfd
+/etc/hosts
+/etc/motd
+```
+
+After installation the script also:
+
+- flushes the macOS DNS cache
+- updates the APFS preboot volume
+- removes the temporary staging directory
+
+***
+## Notes
+
+Administrative privileges are required because the scripts modify protected system locations.
+
+Always review scripts before running them with sudo.
+
+***
 ## Thanks to…
 
 * [Mathias Bynens](https://mathiasbynens.be/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles/)

@@ -1,35 +1,70 @@
-###################################
-# OS Specific
-###################################
-
-# Linux
-*~
-# KDE
-.directory
-
-# OSX
-**/.DS_Store
+# macOS
 .DS_Store
-*.swp
-*~.nib
-# Thumbnails
+.AppleDouble
+.LSOverride
+
+# macOS temp
 ._*
+.Spotlight-V100
+.Trashes
 
 # Windows
-# Windows image file caches
 Thumbs.db
-# Folder config file
 Desktop.ini
 
-# Android
-.csettings
-/libs/openFrameworksCompiled/project/android/paths.make
+# Logs
+*.log
 
-###################################
-# App Specific 
-###################################
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
 
+# IDE
+.vscode/
+.idea/
 
-###################################
-# official gitignore repo:
-# http://github.com/github/gitignore
+# Parallels Desktop VM files
+*.pvm
+*.hdd
+*.mem
+*.sav
+
+# Virtual machine disks
+*.vhd
+*.vhdx
+*.vmdk
+*.qcow2
+
+# Windows image artifacts
+*.wim
+*.esd
+*.iso
+
+# Mount directories
+Mount/
+mount/
+
+# Build / output folders
+Images/
+images/
+output/
+build/
+dist/
+
+# Environment files
+.env
+.env.local
+
+# Obsidian
+.obsidian/
+
+# Obsidian cache files
+.obsidian/workspace.json
+.obsidian/workspace
+.obsidian/cache
+.obsidian/plugins/
+
+# Obsidian temp files
+*.obsidian
