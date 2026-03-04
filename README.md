@@ -37,7 +37,7 @@ To install using the bootstrap script:
 curl -LJO https://raw.githubusercontent.com/marscanbueno/shared/main/.install.sh && source .install.sh
 ```
 
-*I updated the repo name as well as the README, you will have the codeblock above.*
+*I updated the repo name as well as the README, you will have to modify the codeblock above.*
 
 ---
 
